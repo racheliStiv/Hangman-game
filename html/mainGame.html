@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- Link to the css page -->
+    <link rel="stylesheet" href="../css/mainGame.css">
+</head>
+<!-- The body of the game, the board is divided into 3 parts. The right part gives information about victories, the number of disqualifications and more. The middle part shows the keyboard and the place of the word, and the left part contains the drawing of the man -->
+
+<body>
+    <audio id="voice" autoplay>
+        <source id="mp3_src" src="../audio/game.mp3" type="audio/ogg" >
+      Your browser does not support the audio element.
+      </audio>
+    <!--The screen when the game was over-->
+    <div id="finish" class="h">
+        <div class="finishText" id="titleOfEnd"></div>
+        <div class="finishText" id="result"></div>
+        <button id="buttonAgain" onclick="GameOver()"></button>
+    </div>
+    <section id="firstPart">
+        <!-- The part of the information about the state of the game, victories, etc -->
+        <div id="information">
+            <!-- A heart that shows how many lives the player has left -->
+            <img id="lives" src="../pictures/2764.png">
+            <div id="numOfFailed">9</div>
+        </div>
+        <div id="title">hangMan</div>
+        <span id="time">01:00</span>
+        <a id="esc" href="allGames.html"><button style="background-color: transparent"><img
+            src="../pictures/home-page.png" alt="homePage"></button></a>
+            
+    </section>
+    <section id="secondPart">
+        <div id="theMan">
+            <canvas id="myCanvas" width="400" height="400">
+                Your browser does not support the HTML canvas tag.
+            </canvas>
+        </div>
+        <div id="theWord"></div>
+        <p id="userName"></p>
+    </section>
+    <section id="thirdPart">
+        <div id="hint">
+            <button id="hintButton" onclick="doHint()"> </button>
+            <div id="hintText">צריך עזרה?</div>
+        </div>
+        <div id="buttons"></div>
+    </section>
+    <script type="text/javascript" src="../js/mainGame.js">
+    </script>
+</body>
+</html>

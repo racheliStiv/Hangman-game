@@ -1,0 +1,139 @@
+body {
+    background-image: url('../pictures/bg.png');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    display: grid;
+    grid-template-rows: 20% 50% 20%;
+    font-family: myFont;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(ganclm_bold-webfont.ttf);
+}
+
+#buttons {
+    flex: 80%;
+    display: grid;
+    grid-template-columns: repeat(14, 7%);
+}
+
+#title {
+    font-family: 'Showcard Gothic';
+    color: white;
+    font-size: 70px;
+    margin-top: 10px;
+    text-align: center;
+    margin-right: 0;
+}
+
+#firstPart {
+    display: grid;
+    grid-template-columns: 20% 60% 10% 10%;
+}
+#secondPart {
+    display: grid;
+    grid-template-columns:40% 40% 20%;
+}
+
+#myCanvas {
+    margin-top: 50px;
+}
+
+#lives {
+    width: 60px;
+    height: 60px;
+    animation: beat .70s infinite alternate;
+    z-index: -1;
+    margin-right: 30px;
+    margin-top: 25px;
+}
+
+@keyframes beat {
+    to {
+        transform: scale(1.4);
+    }
+}
+
+#numOfFailed {
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 53px;
+    position: relative;
+    margin-top: -50px;
+    width: 10px;
+    color: #ffffff;
+}
+
+#finish {
+    background: linear-gradient(rgba(125, 0, 0, 0.9) 20%, rgba(4, 187, 28, 0.7) 80%);
+    display: none;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#theWord{
+    margin-right: 5%;
+    margin-top: 20%;
+}
+
+.finishText {
+    color: #fff;
+    margin-top: 8%;
+    text-align: center;
+    justify-content: center;
+}
+
+#buttonAgain {
+    font-family: myFont;
+    display: none;
+}
+
+#hint {
+    flex: 10%;
+    display: grid;
+    grid-template-rows: 80% 20%;
+}
+
+#thirdPart {
+    display: flex;
+    flex-direction: row;
+}
+
+#hintButton {
+    background: url("../pictures/lightbulb.png");
+    background-repeat: no-repeat;
+    height: 100px;
+    cursor: pointer;
+    border: none;
+    width: 100px;
+    background-size: 100%;
+}
+
+#time {
+    height: auto;
+    font-size: 40px;
+    width: 150px;
+    margin-top: 15%;
+}
+
+#hintText {
+    visibility: hidden;
+    font-size:x-large;
+}
+#esc {
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    margin-right:60%;
+    margin-top: 15%;
+}
+#userName{
+  font-size: 30px;  
+  margin-top: 40%;
+  color: #fff;
+}

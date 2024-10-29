@@ -1,0 +1,67 @@
+#allGames {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    z-index: 0;
+    margin-left: 20%;
+}
+
+#title {
+    text-align: center;
+    font-size: 90px;
+    font-family: "Snap ITC";
+    margin-bottom: 10%;
+    text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+}
+
+#bg {
+    width: 100%;
+    z-index: -1;
+    position: fixed;
+    opacity: 0.3;
+}
+
+#all {
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+
+.games {
+    margin-top: 50%;
+    border: none;
+    filter: drop-shadow(0 0 10px black);            
+    filter: drop-shadow(0 0 0 10px black); ; 
+}
+
+
+.games:hover {
+    opacity: 0.7;
+}
+
+#ca {
+    background-image: url('../pictures/candyCrush.webp');
+    width: 180px;
+    height: 300px;
+
+}
+
+#ishTal {
+    background-image: url('../pictures/unnamed.webp');
+    width: 180px;
+    height: 300px;
+
+}
+
+#tom {
+    background-image: url('../pictures/myTalkingTom.webp');
+    width: 180px;
+    height: 300px;
+}
+
+#sub {
+    background-image: url('../pictures/subwaySuf.webp');
+    width: 180px;
+    height: 300px;
+}
+body{
+    overflow: hidden;
+}
